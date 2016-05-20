@@ -1,12 +1,12 @@
 'use strict';
 
-import path form 'path';
-import koa form 'koa';
-import logger form 'koa-logger';
-import serve form 'koa-static';
-import route form 'koa-route';
+import path from 'path';
+import koa from 'koa';
+import logger from 'koa-logger';
+import serve from 'koa-static';
+import route from 'koa-route';
 
-import render form './lib/render';
+import render from './lib/render';
 
 let app = koa();
 
@@ -20,4 +20,4 @@ function *home(){
 app.use(serve(path.join(__dirname, 'build')));
 
 app.listen(3000);
-console.log('listening localhost:3000');
+console.log('running on http://localhost:3000');

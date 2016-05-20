@@ -16,11 +16,11 @@ module.exports = {
 	},
 	module: {
 		loaders: [
-			{test: /src(\\|\/).+\.jsx?$/, exclude: /node_modules/, loaders:'babel', query:{presets:['es2015', 'react']}}
+      {test: /src(\\|\/).+\.jsx?$/, exclude: /node_modules/, loader: 'babel', query: {presets: ['es2015', 'react']}}
 		]
 	},
 	plugins: [
-		new webpack.NotErrorsPlugin()
+		new webpack.NoErrorsPlugin()
 	],
 	devtool: 'source-map'
 }
